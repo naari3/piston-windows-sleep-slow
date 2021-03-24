@@ -6,7 +6,9 @@ fn main() {
         .build()
         .unwrap();
 
-    window.set_max_fps(60);
+    window.set_max_fps(60); // => 34 fps
+
+    // window.set_bench_mode(true); // => 1200 fps wow
 
     let mut fps = fps_counter::FPSCounter::default();
     loop {
